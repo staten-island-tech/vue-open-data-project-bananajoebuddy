@@ -7,3 +7,7 @@ import FarmerMarket from '../components/FarmerMarket.vue'
     <TheWelcome />
   </main>
 </template>
+
+
+<!-- HOW MANY ARE IN EACH BOROUGHS
+-->
