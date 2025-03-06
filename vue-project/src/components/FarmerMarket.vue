@@ -1,32 +1,19 @@
 <template>
-    <router-link :to="pkmnPath">
-      <h2>{{ mon.name }}</h2>
-      <h3>{{ index + 1 }}</h3>
-    </router-link>
-  </template>
-  
-  <script setup>
-  import { computed } from 'vue'
-  const props = defineProps({
-    pokemon: Object,
-    id: Number,
-  })
-  
-  constpkmnPath = computed(() => {
-    return '/pokemon/$props.id'
-  })
-  
-  defineProps({
-    name: String,
-    index: Number,
-  })
-  </script>
-  
-  <style scoped>
-  .card {
-    width: 20%;
-    height: 20%;
-    background-color: blanchedalmond;
+  <div>
+
+  </div>
+</template>
+
+<script setup>
+
+async function skidsfhsa() {
+    let res = await fetch('https://data.cityofnewyork.us/api/odata/v4/8vwk-6iz2')
+    let data = await res.json()
+    lklkgerf.value = data
   }
-  </style>
-  
+
+</script>
+
+<style scoped>
+
+</style>
