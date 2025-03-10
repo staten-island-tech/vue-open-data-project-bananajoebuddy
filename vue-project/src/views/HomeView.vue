@@ -1,14 +1,15 @@
 <script setup>
 import FarmerMarket from '../components/FarmerMarket.vue'
-import FarmerLot from '@/components/FarmerLot.vue';
+import FarmerLot from '@/components/FarmerLot.vue'
 </script>
 
 <template>
   <main>
     <TheWelcome />
+    <FarmerLot />
+    <FarmerMarket />
   </main>
 </template>
-
 
 <!-- HOW MANY ARE IN EACH BOROUGHS
  figure out how many markets are open in the days of the week

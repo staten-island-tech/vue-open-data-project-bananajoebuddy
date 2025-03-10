@@ -1,19 +1,14 @@
 <template>
-  <div>
-
-  </div>
+  <div></div>
 </template>
 
 <script setup>
-
 async function skidsfhsa() {
-    let res = await fetch('https://data.cityofnewyork.us/api/odata/v4/8vwk-6iz2')
-    let data = await res.json()
-    lklkgerf.value = data
-  }
-
+  let res = await fetch('https://data.cityofnewyork.us/api/odata/v4/8vwk-6iz2')
+  let data = await res.json()
+  lklkgerf.value = data
+}
+let lklkgerf = document.getElementById('lklkgerf')
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
