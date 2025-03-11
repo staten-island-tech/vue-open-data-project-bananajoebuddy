@@ -1,15 +1,16 @@
+<template>
+  <div class="skibidi">
+    <TheWelcome />
+    <FarmerMarket></FarmerMarket>
+  </div>
+</template>
+
 <script setup>
 import FarmerMarket from '../components/FarmerMarket.vue'
-import FarmerLot from '@/components/FarmerLot.vue'
+import TheWelcome from '@/components/TheWelcome.vue'
 </script>
 
-<template>
-  <main>
-    <TheWelcome />
-    <FarmerLot />
-    <FarmerMarket />
-  </main>
-</template>
+<style scoped></style>
 
 <!-- HOW MANY ARE IN EACH BOROUGHS
  figure out how many markets are open in the days of the week

@@ -1,14 +1,22 @@
 <template>
-  <div></div>
+  <div>{{ lslsgerf }}</div>
 </template>
 
 <script setup>
+import { onMounted } from 'vue'
+
 async function skidsfhsa() {
-  let res = await fetch('https://data.cityofnewyork.us/api/odata/v4/8vwk-6iz2')
-  let data = await res.json()
-  lklkgerf.value = data
+  const res = await fetch('https://data.cityofnewyork.us/resource/8vwk-6iz2.json')
+  const data = await res.json()
+  console.log(data)
+  lslsgerf.push(data)
 }
-let lklkgerf = document.getElementById('lklkgerf')
+
+onMounted(() => {
+  skidsfhsa()
+})
+
+let lslsgerf = ['']
 </script>
 
 <style scoped></style>
