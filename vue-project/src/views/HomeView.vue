@@ -1,13 +1,11 @@
 <template>
   <div class="skibidi">
-    <TheWelcome />
-    <FarmerMarket></FarmerMarket>
+    <FarmerMarket />
   </div>
 </template>
 
 <script setup>
 import FarmerMarket from '../components/FarmerMarket.vue'
-import TheWelcome from '@/components/TheWelcome.vue'
 </script>
 
 <style scoped></style>
