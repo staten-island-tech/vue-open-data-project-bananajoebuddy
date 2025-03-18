@@ -1,5 +1,14 @@
 <template>
-  <div>{{ lslsgerf }}</div>
+  <div v-for="(item, index) in lslsgerf" :key="index" class="card">
+    <h2>{{ item.marketname }}</h2>
+    <p>Borough: {{ item.borough }}</p>
+    <p>Address: {{ item.streetaddress }}</p>
+    <p>Community district: {{ item.community_district }}</p>
+    <p>Days operation:{{ item.daysoperation }}</p>
+    <p>Hours opeation:{{ item.hoursoperations }}</p>
+    <p>Accepts EBT?:{{ item.accepts_ebt }}</p>
+    <p>Open year round?:{{ item.open_year_round }}</p>
+  </div>
 </template>
 
 <script setup>
@@ -17,4 +26,10 @@ onMounted(() => {
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.card {
+  width: 20%;
+  height: max-content;
+  background-color: skyblue;
+}
+</style>

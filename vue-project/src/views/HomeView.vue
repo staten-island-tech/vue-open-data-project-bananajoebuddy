@@ -8,7 +8,15 @@
 import FarmerMarket from '../components/FarmerMarket.vue'
 </script>
 
-<style scoped></style>
+<style scoped>
+.skibidi {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+</style>
 
 <!-- HOW MANY ARE IN EACH BOROUGHS
  figure out how many markets are open in the days of the week
