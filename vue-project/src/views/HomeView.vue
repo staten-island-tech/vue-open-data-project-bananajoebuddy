@@ -33,7 +33,7 @@ import FarmerMarket from '../components/FarmerMarket.vue'
   a drop down for year
   drop down for which kind of cahrt
   - make sure to account for the columns arent consistent for every year
-
+  - 
 
 
 
