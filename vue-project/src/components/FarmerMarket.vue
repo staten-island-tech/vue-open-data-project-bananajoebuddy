@@ -1,5 +1,5 @@
 <template>
-  <div v-for="(item, index) in lslsgerf" :key="index" class="card">
+  <div v-for="(item, index) in farmerData" :key="index" class="card">
     <h2>{{ item.marketname }}</h2>
     <p><span class="bold">Borough: </span>{{ item.borough }}</p>
     <p><span class="bold">Address: </span>{{ item.streetaddress }}</p>
@@ -14,15 +14,24 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const lslsgerf = ref([''])
-async function skidsfhsa() {
-  const res = await fetch('https://data.cityofnewyork.us/resource/8vwk-6iz2.json')
-  const data = await res.json()
-  lslsgerf.value = data
-  console.log(data)
+const farmerData = ref([])
+
+
+const getData = async () => {
+  try {
+    const res = await fetch('https://data.cityofnewyork.us/resource/8vwk-6iz2.json');
+    
+    
+    if (!res.ok) throw new Error('Failed to fetch data');
+    
+    farmerData.value = await res.json(); 
+  } catch (error) {
+    console.error('Error:', error);  
+  }
 }
+
 onMounted(() => {
-  skidsfhsa()
+  getData()
 })
 </script>
 

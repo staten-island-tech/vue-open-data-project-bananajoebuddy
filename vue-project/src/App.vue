@@ -5,7 +5,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <div class="wrapper">
-      <HelloWorld msg="SYBAUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU!" />
+      <HelloWorld msg="nothing here" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
