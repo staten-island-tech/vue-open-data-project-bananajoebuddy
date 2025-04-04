@@ -1,10 +1,14 @@
 <template>
   <div class="about">
-    <h1>not finished!</h1>
+    <FarmerChart />
   </div>
 </template>
 
-<style>
+<script setup>
+import FarmerChart from '../components/FarmerChart.vue'
+</script>
+
+<style scoped>
 @media (min-width: 1024px) {
   .about {
     min-height: 100vh;
@@ -13,6 +17,4 @@
   }
 }
 </style>
-<!--
-insert the charts here
- -->
+
